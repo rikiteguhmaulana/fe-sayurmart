@@ -1,6 +1,6 @@
 # 🥬 SayurMart
 
-![App Screenshot](./public/images/ss.png)
+![App Screenshot](./public/images/Tampilan Halaman Utama.jpeg)
 
 Sebuah website jual beli sayur online yang dirancang untuk memudahkan konsumen membeli sayuran segar langsung dari petani atau supplier. Sistem ini menyediakan katalog produk, fitur transaksi online, serta manajemen data produk dan pesanan.
 
