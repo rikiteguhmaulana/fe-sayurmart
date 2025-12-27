@@ -67,7 +67,7 @@ const ProductCard = ({ product }: { product: TProductResponse }) => {
           </div>
 
           <button
-            className="w-full h-10 lg:h-11 rounded-2xl bg-success text-white font-bold text-xs lg:text-sm flex items-center justify-center gap-2 hover:bg-emerald-600 active:scale-95 transition-all duration-200 disabled:opacity-50"
+            className="w-full h-11 lg:h-12 rounded-2xl bg-gradient-to-r from-success to-emerald-500 text-white font-bold text-xs lg:text-sm flex items-center justify-center gap-3 shadow-lg shadow-success/20 hover:shadow-xl hover:shadow-success/30 active:scale-[0.98] transition-all duration-300 disabled:opacity-50"
             disabled={isPendingAddToCart}
             onClick={(e) => {
               e.preventDefault();
@@ -84,10 +84,10 @@ const ProductCard = ({ product }: { product: TProductResponse }) => {
             {isPendingAddToCart ? (
               <Spinner size="sm" color="white" />
             ) : (
-              <>
-                <FiShoppingCart className="w-4 h-4 flex-shrink-0" />
-                <span className="whitespace-nowrap">Tambah ke Keranjang</span>
-              </>
+              <div className="flex items-center gap-2.5">
+                <FiShoppingCart className="w-4 h-4" />
+                <span>Tambah ke Keranjang</span>
+              </div>
             )}
           </button>
         </div>
