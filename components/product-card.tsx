@@ -84,10 +84,10 @@ const ProductCard = ({ product }: { product: TProductResponse }) => {
             {isPendingAddToCart ? (
               <Spinner size="sm" color="white" />
             ) : (
-              <div className="flex items-center justify-center gap-2 w-full">
+              <>
                 <FiShoppingCart className="w-4 h-4 flex-shrink-0" />
-                <span className="truncate">Tambah ke Keranjang</span>
-              </div>
+                <span className="whitespace-nowrap">Tambah ke Keranjang</span>
+              </>
             )}
           </button>
         </div>
